@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: #fff;
+	padding-top: 2rem;
+}
+.searchbar{
+	width: 100%;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 1rem;
+}
+.searchbar input{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	border: 1px solid #aaa;
+	border-radius: 3px;
+	padding: 0rem 1rem;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: inherit;
+	padding-left: 3rem;
+}
+.searchbar i{
+	position: absolute;
+	left: 1rem;
+	font-size: 24px;
+	color: #777;
+	top: 50%;
+	transform: translate(0%, -50%);
+}
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.top-bar{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0.5rem 0rem;
+}
+.top-bar .left{
+	margin-right: auto;
+}
+.top-bar .right{
+	margin-left: auto;
+}
+
+.nav{
+	display: flex;
+}
+.nav .item{
+	padding: 0.5rem 0.7rem;
+	text-decoration: none;
+	color: orangered;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+.brand{
+	font-weight: bold;
+	font-size: 18px;
+	color: orangered;
+	text-decoration: none;
+}
+
+@media (min-width: 576px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+.menubar{
+	width: 100%;
+	display: flex;
+	margin-bottom: 2rem;
+}
+.menubar .item{
+	display: flex;
+	margin-right: 1rem;
+	color: #777;
+	text-decoration: none;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+.menubar .item:last-child{
+	margin-right: none;
+}
+
+.content{
+	display: flex;
+	justify-content:space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-top: 1rem;
+}
+
+.card{
+	flex: calc(33% - 1rem);
+	max-width: calc(33% - 1rem);
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 2rem;
+}
+.card:hover{
+	box-shadow: 0px 8px 12px -1px rgba(0, 0, 0, 0.24);
+}
+.card .card-img-top{
+	width: 100%;
+	height: 250px;
+}
+.card .card-title{
+	font-weight: 500;
+	font-size: 18px;
+	color: #444;
+	padding: 1rem 1rem 0rem;
+}
+.card .card-description{
+	color: #777;
+	padding: 1rem;
+	font-size: 14px;
+}
